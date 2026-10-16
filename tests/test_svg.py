@@ -10,7 +10,9 @@ def test_write_svg_creates_file_with_hexagon(tmp_path: Path) -> None:
         output,
         width=100,
         height=100,
-        hexagons=[([(50, 25), (72, 37), (72, 63), (50, 75), (28, 63), (28, 37)], (255, 0, 0))],
+        hexagons=[
+            ([(50, 25), (72, 37), (72, 63), (50, 75), (28, 63), (28, 37)], (255, 0, 0))
+        ],
     )
 
     content = output.read_text(encoding="utf-8")

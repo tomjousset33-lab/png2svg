@@ -1,5 +1,3 @@
-
-
 def write_svg(
     output,
     width,
